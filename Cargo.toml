@@ -1,7 +1,7 @@
 [package]
-name = "ic-eth"
+name = "icp-eth"
 version = "0.0.1"
-description = "IC Ethereum utilities"
+description = "ICP + Ethereum cross-chain utilities"
 authors = ["Ryan Vandersmith"]
 edition = "2021"
 
