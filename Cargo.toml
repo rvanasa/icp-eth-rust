@@ -1,0 +1,20 @@
+[package]
+name = "ic-eth"
+version = "0.0.1"
+description = "IC Ethereum utilities"
+authors = ["Ryan Vandersmith"]
+edition = "2021"
+
+[dependencies]
+url = "2.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+hex = "0.4"
+ethers-core = "2.0"
+getrandom = { version = "0.2", features = ["custom"] }
+canpack = { version = "^0.1", optional = true }
+
+[build-dependencies]
+candid = "0.10"
+ic-cdk = "0.12"
+ic-cdk-macros = "0.8"
