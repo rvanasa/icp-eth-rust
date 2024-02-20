@@ -1,4 +1,4 @@
-# `ic-eth-rust`
+# `ic-eth`
 
 Rust utilities for Rust and Motoko canisters.
 
