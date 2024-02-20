@@ -20,7 +20,7 @@ thread_local! {
 canpack::export! {
     /// Verify an ECDSA signature (message signed by an Ethereum wallet).
     #[canpack(update)]
-    pub fn verify_ecdsa(eth_address: String, message: String, signature: String) -> bool {
+    pub fn ecdsa_verify(eth_address: String, message: String, signature: String) -> bool {
         Signature::from_str(&signature)
             .unwrap()
             .verify(
