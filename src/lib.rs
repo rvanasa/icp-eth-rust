@@ -1,6 +1,5 @@
 use std::{rc::Rc, str::FromStr};
 
-use candid::candid_method;
 use eth_rpc::call_contract;
 use ethers_core::{
     abi::{Contract, Token},
@@ -17,7 +16,7 @@ thread_local! {
     static ERC_1155: Rc<Contract> = Rc::new(include_abi!("../abi/erc1155.json"));
 }
 
-#[feature(canpack)]
+#[cfg(feature = "canpack")]
 canpack::export! {
     /// Verify an ECDSA signature (message signed by an Ethereum wallet).
     #[canpack(update)]

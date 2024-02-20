@@ -131,7 +131,10 @@ pub async fn call_contract(
         method: HttpMethod::POST,
         headers: request_headers,
         body: Some(json_rpc_payload.as_bytes().to_vec()),
-        transform: Some(TransformContext::from_name("transform".to_string(), vec![])),
+        transform: Some(TransformContext::from_name(
+            "icp_eth_transform_response".to_string(),
+            vec![],
+        )),
     };
     let result = match http_request(request, HTTP_CYCLES).await {
         Ok((r,)) => r,
@@ -148,7 +151,7 @@ pub async fn call_contract(
     f.decode_output(&result).expect("Error decoding output")
 }
 
-#[ic_cdk_macros::query(name = "transform")]
+#[ic_cdk::query(name = "icp_eth_transform_response")]
 pub fn transform(args: TransformArgs) -> HttpResponse {
     HttpResponse {
         status: args.response.status.clone(),
