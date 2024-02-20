@@ -1,10 +1,11 @@
 [package]
 name = "icp-eth"
-version = "0.2.0"
+version = "0.2.1"
 description = "ICP + Ethereum cross-chain utilities"
 authors = ["Ryan Vandersmith"]
 license = "Apache-2.0"
 edition = "2021"
+repository = "https://github.com/rvanasa/icp-eth-rust"
 
 [features]
 default = ["canpack"]

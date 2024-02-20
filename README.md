@@ -1,5 +1,5 @@
 # `ic-eth`
 
-Rust utilities for Rust and Motoko canisters.
+Ethereum cross-chain utilities for Rust and Motoko [ICP](https://internetcomputer.org/) canisters.
 
 Supports [Canpack](https://github.com/rvanasa/canpack).
