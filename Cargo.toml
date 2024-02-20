@@ -1,6 +1,6 @@
 [package]
 name = "icp-eth"
-version = "0.0.1"
+version = "0.1.0"
 description = "ICP + Ethereum cross-chain utilities"
 authors = ["Ryan Vandersmith"]
 license = "Apache-2.0"
