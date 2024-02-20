@@ -1,6 +1,6 @@
 [package]
 name = "icp-eth"
-version = "0.2.1"
+version = "0.2.2"
 description = "ICP + Ethereum cross-chain utilities"
 authors = ["Ryan Vandersmith"]
 repository = "https://github.com/rvanasa/icp-eth-rust"
